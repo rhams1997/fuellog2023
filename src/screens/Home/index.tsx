@@ -1,10 +1,48 @@
 
-import React from 'react';
-import { Container, Title } from './styles';
+import { 
+  Container,
+  Header,
+  UserWrapper,
+  CarIcon,
+  HeaderTextWrapper,
+  Greeting,
+  CarPlate,
+  LogoutButton,
+  LogountIcon 
+} from './styles';
 export function Home() {
   return (
     <Container>
-      <Title>Fuellog 2023!</Title>
+        
+      <Header>
+        <UserWrapper>
+          <CarInfo>
+            <CarIcon>
+              
+
+            </CarIcon>
+
+            <HeaderTextWrapper>
+
+              <Greeting>
+
+              </Greeting>
+
+              <CarPlate>
+
+              </CarPlate>
+            </HeaderTextWrapper>
+
+          </CarInfo>
+          <LogoutButton>
+
+            <LogountIcon>
+
+            </LogountIcon>
+
+          </LogoutButton>
+        </UserWrapper>
+      </Header>
     </Container>
   );
 }
