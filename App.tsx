@@ -8,7 +8,7 @@ import { useFonts,
   } from '@expo-google-fonts/poppins';
 import { Loading } from './src/Components/Loading';
 import { ThemeProvider } from 'styled-components';
-import theme from './src/styles/theme';
+import theme from './src/global/styles/theme';
 
 
 export default function App() {
