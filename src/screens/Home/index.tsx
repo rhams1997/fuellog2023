@@ -4,12 +4,14 @@ import {
   Header,
   UserWrapper,
   CarIcon,
+  CarInfo,
   HeaderTextWrapper,
   Greeting,
   CarPlate,
   LogoutButton,
   LogountIcon 
 } from './styles';
+
 export function Home() {
   return (
     <Container>
@@ -17,7 +19,8 @@ export function Home() {
       <Header>
         <UserWrapper>
           <CarInfo>
-            <CarIcon>
+            <CarIcon name='directions-car'>
+
               
 
             </CarIcon>
@@ -25,10 +28,12 @@ export function Home() {
             <HeaderTextWrapper>
 
               <Greeting>
+                Placa
 
               </Greeting>
 
               <CarPlate>
+                AAA-9999
 
               </CarPlate>
             </HeaderTextWrapper>
@@ -36,7 +41,7 @@ export function Home() {
           </CarInfo>
           <LogoutButton>
 
-            <LogountIcon>
+            <LogountIcon name='logout'>
 
             </LogountIcon>
 
