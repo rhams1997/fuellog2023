@@ -12,7 +12,7 @@ export const Container = styled.View`
 
   export const Header = styled.View`
     width: 100%;
-    height: ${RFPercentage(40)}px;
+    height: ${RFPercentage(20)}px;
     background-color: ${({ theme }) => theme.colors.primary};
     //align-items: center;
     justify-content: center;
@@ -33,7 +33,7 @@ export const Container = styled.View`
   `;
 
   export const CarIcon = styled(MaterialIcons)`
-    color: ${({ theme }) => theme.colors.headerText};//header_text
+    color: ${({ theme }) => theme.colors.header_text};//header_text
     font-size: ${RFValue(40)}px;
 
   `;
@@ -43,7 +43,7 @@ export const Container = styled.View`
   `;
 
   export const Greeting = styled.Text`
-    color: ${({ theme }) => theme.colors.headerText};//header_text
+    color: ${({ theme }) => theme.colors.header_text};//header_text
     font-family: ${({ theme }) => theme.fonts.regular};//font-family deu error, logo tive que usar fontfamily
     font-size: ${RFValue(18)}px;
     line-height: ${RFValue(24)}px;
@@ -51,7 +51,7 @@ export const Container = styled.View`
   `;
 
   export const CarPlate = styled.Text`
-    color: ${({ theme }) => theme.colors.headerText};//header_text
+    color: ${({ theme }) => theme.colors.header_text};//header_text
     font-family: ${({ theme }) => theme.fonts.bold};//font-family deu error, logo tive que usar fontfamily
     font-size: ${RFValue(18)}px;
     line-height: ${RFValue(24)}px;
@@ -60,7 +60,7 @@ export const Container = styled.View`
   export const LogoutButton = styled.View``;
 
   export const LogountIcon  = styled(MaterialIcons)`
-    color: ${({ theme }) => theme.colors.headerText};
-    font-size: ${RFValue(24)}px;
+    color: ${({ theme }) => theme.colors.header_text};
+    font-size: ${RFValue(20)}px;
 
   `;
