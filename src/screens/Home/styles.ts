@@ -21,10 +21,10 @@ export const Container = styled.View`
 
   export const UserWrapper = styled.View`
     flex-direction: row;
-    padding: 0 24px;
+    padding: 0 20px;
     align-items: center;
     justify-content: space-between;
-    margin-top: ${getStatusBarHeight() + RFValue(28)}px;
+    margin-top: ${getStatusBarHeight() + RFValue(1)}px;
   `;
 
   export const CarInfo = styled.View`
