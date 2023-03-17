@@ -6,6 +6,7 @@ import {
   CarIcon,
   CarInfo,
   HeaderTextWrapper,
+  HeaderText,
   Greeting,
   CarPlate,
   LogoutButton,
@@ -19,23 +20,26 @@ export function Home() {
       <Header>
         <UserWrapper>
           <CarInfo>
-            <CarIcon name='directions-car'>
+            <CarIcon name='ios-car-sport'>
 
               
 
             </CarIcon>
 
-            <HeaderTextWrapper>
-
+            <HeaderText>
               <Greeting>
-                Placa
-
+                Bem Vindo!
               </Greeting>
+
+            </HeaderText>
+
+            <HeaderTextWrapper>
 
               <CarPlate>
                 AAA-9999
 
               </CarPlate>
+              
             </HeaderTextWrapper>
 
           </CarInfo>

@@ -1,6 +1,6 @@
 export default {
     colors: {
-        primary: '#FFA6B0',//B420C
+        primary: '#17DAC3',//B420C
         primary_light: '#12A454',
         secondary: 'C8191E',
         background: '#E5E5E5',
@@ -12,9 +12,7 @@ export default {
         
     },
     fonts: {
-        regular: 'Poppins_400Regular',
-        medium: 'Poppins_500Medium',
-        semi_bold: 'Poppins_600SemiBold',
-        bold: 'Poppins_700Bold'
+        regular: 'Inter_400Regular',
+        medium: 'Inter_500Medium',
     }
 }
