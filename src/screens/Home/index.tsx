@@ -22,11 +22,10 @@ export function Home() {
           <CarInfo>
             <CarIcon name='ios-car-sport'>
 
-              
-
             </CarIcon>
 
             <HeaderText>
+
               <Greeting>
                 Bem Vindo!
               </Greeting>
@@ -36,8 +35,7 @@ export function Home() {
             <HeaderTextWrapper>
 
               <CarPlate>
-                AAA-9999
-
+                BRA-2E19
               </CarPlate>
               
             </HeaderTextWrapper>

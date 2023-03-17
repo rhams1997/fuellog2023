@@ -15,7 +15,6 @@ export const Container = styled.View`
     width: 100%;
     height: ${RFPercentage(20)}px;
     background-color: ${({ theme }) => theme.colors.primary};
-    //align-items: center;
     justify-content: center;
     
   `;
@@ -35,33 +34,30 @@ export const Container = styled.View`
 
   export const CarIcon = styled(Ionicons)`
     color: ${({ theme }) => theme.colors.header_text};
-    font-size: ${RFValue(30)}px;
-
+    font-size: ${RFValue(40)}px;
   `;
 
   export const HeaderTextWrapper = styled.View`
-    margin-left: ${RFValue(50)}px;
-    //margin-top: ${RFValue(1)}px;
+    margin-left: ${RFValue(40)}px;
   `;
 
   export const HeaderText = styled.View`
-  margin-left: ${RFValue(50)}px;
-  //margin-top: ${RFValue(1)}px;
+    margin-left: ${RFValue(20)}px;
+    margin-right: ${RFValue(20)}px;
   `;
 
   export const Greeting = styled.Text`
-    color: ${({ theme }) => theme.colors.header_text};//header_text
-    font-family: ${({ theme }) => theme.fonts.regular};//font-family deu error, logo tive que usar fontfamily
-    font-size: ${RFValue(18)}px;
+    color: ${({ theme }) => theme.colors.header_text};
+    font-family: ${({ theme }) => theme.fonts.regular};
+    font-size: ${RFValue(12)}px;
     line-height: ${RFValue(24)}px;
-
 ;
   `;
 
   export const CarPlate = styled.Text`
-    color: ${({ theme }) => theme.colors.header_text};//header_text
-    font-family: ${({ theme }) => theme.fonts.regular};//font-family deu error, logo tive que usar fontfamily
-    font-size: ${RFValue(18)}px;
+    color: ${({ theme }) => theme.colors.header_text};
+    font-family: ${({ theme }) => theme.fonts.regular};
+    font-size: ${RFValue(12)}px;
     line-height: ${RFValue(24)}px;
   `;
 
@@ -69,6 +65,6 @@ export const Container = styled.View`
 
   export const LogountIcon  = styled(MaterialIcons)`
     color: ${({ theme }) => theme.colors.header_text};
-    font-size: ${RFValue(30)}px;
+    font-size: ${RFValue(25)}px;
 
   `;
