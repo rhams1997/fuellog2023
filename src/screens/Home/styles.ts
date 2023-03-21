@@ -15,7 +15,7 @@ export const Container = styled.View`
     width: 100%;
     height: ${RFPercentage(20)}px;
     background-color: ${({ theme }) => theme.colors.primary};
-    justify-content: center;
+    //justify-content: center;
     
   `;
 
