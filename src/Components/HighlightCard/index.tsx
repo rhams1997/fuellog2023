@@ -21,6 +21,7 @@ export function HighlightCard() {
                 <Title>Álcool</Title>
                 <Icon name="local-gas-station" />
             </Header>
+
             <Consumption>
                 <ConsumptionLabel>Consumo Médio:</ConsumptionLabel>
                 <ConsumptionValue>7,00 km/l</ConsumptionValue>
@@ -31,9 +32,9 @@ export function HighlightCard() {
                 <CostValue>0,34 / km</CostValue>
             </Cost>
 
-            <footer>
+            <Footer>
                 <LastTransaction>Ultima entrada dia 13 de abril</LastTransaction>
-            </footer>
+            </Footer>
         </Container>
     )
 }

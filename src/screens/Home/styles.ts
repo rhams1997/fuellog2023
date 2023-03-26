@@ -68,3 +68,5 @@ export const Container = styled.View`
     font-size: ${RFValue(25)}px;
 
   `;
+
+  export const HighlightCards = styled.ScrollView``;
