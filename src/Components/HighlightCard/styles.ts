@@ -7,8 +7,8 @@ export const Container = styled.View`
     width: ${RFValue(300)}px;
     padding: 19px 23px;
     padding-bottom: ${RFValue(32)}px;
+    margin-right: 16px;
 `;
-
 
 export const  Header = styled.View`
     flex-direction: row;

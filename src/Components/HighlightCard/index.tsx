@@ -14,26 +14,46 @@ import {
     LastTransaction
 } from './styles';
 
-export function HighlightCard() {
+interface Props{
+    title: string;
+    consumption: string;
+    cost:string;
+    lastTransaction: string;
+    type: 'alcohol' | 'gasoline' | 'total';
+}
+
+export function HighlightCard({
+    title,
+    consumption,
+    cost,
+    lastTransaction,
+    type
+}: Props) {
+    const icons = {
+        alcohol: "local-gas-station",
+        gasoline: "local-gas-station",
+        total: "local-gas-station"
+    }
+
     return(
         <Container>
             <Header>
-                <Title>Álcool</Title>
-                <Icon name="local-gas-station" />
+                <Title>{title}</Title>
+                <Icon name={icons[type]} />
             </Header>
 
             <Consumption>
                 <ConsumptionLabel>Consumo Médio:</ConsumptionLabel>
-                <ConsumptionValue>7,00 km/l</ConsumptionValue>
+                <ConsumptionValue>{consumption}</ConsumptionValue>
             </Consumption>
 
             <Cost>
                 <CostLabel>Custo por km:</CostLabel>
-                <CostValue>0,34 / km</CostValue>
+                <CostValue>{cost}</CostValue>
             </Cost>
 
             <Footer>
-                <LastTransaction>Ultima entrada dia 13 de abril</LastTransaction>
+                <LastTransaction>{lastTransaction}</LastTransaction>
             </Footer>
         </Container>
     )
