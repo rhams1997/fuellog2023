@@ -12,7 +12,10 @@ import {
   CarPlate,
   LogoutButton,
   LogountIcon,
-  HighlightCards
+  HighlightCards,
+  Title,
+  Transactions
+  
 } from './styles';
 
 export function Home() {
@@ -76,6 +79,10 @@ export function Home() {
           type='total'
         />
       </HighlightCards>
+
+      <Transactions>
+        <Title> Abastecimentos</Title>
+      </Transactions>
 
     </Container>
   );
