@@ -1,9 +1,16 @@
-import styled from 'styled-components/native';
+import styled, {css} from 'styled-components/native';
 import { MaterialIcons } from '@expo/vector-icons';
 import { RFValue } from 'react-native-responsive-fontsize';
 
-export const Container = styled.View`
-    background-color: ${({ theme }) => theme.colors.header_text};
+interface TypeProps {
+    type: 'alcohol' | 'gasoline' | 'total';
+}
+
+export const Container = styled.View<TypeProps>`
+
+    background-color: ${({ theme, type }) => 
+    type === 'total' ? theme.colors.card_title :  theme.colors.header_text};
+
     width: ${RFValue(300)}px;
     padding: 19px 23px;
     padding-bottom: ${RFValue(32)}px;
@@ -22,8 +29,18 @@ export const  Title = styled.Text`
     font-size: ${RFValue(15)}px;
 `;  
 
-export const  Icon = styled(MaterialIcons)`
-    font-size: ${RFValue(35)}px; 
+export const  Icon = styled(MaterialIcons)<TypeProps>`
+    font-size: ${RFValue(35)}px;
+    ${(props) => props.type === 'alcohol' && css`
+        color: ${({ theme }) => theme.colors.primary_light};
+    `}
+    ${(props) => props.type === 'gasoline' && css`
+        color: ${({ theme }) => theme.colors.secondary};
+    `}
+    ${(props) => props.type === 'total' && css`
+        color: ${({ theme }) => theme.colors.header_text};
+    `}
+
 `;
 
 export const  Consumption = styled.View`

@@ -36,10 +36,10 @@ export function HighlightCard({
     }
 
     return(
-        <Container>
+        <Container type={type}>
             <Header>
                 <Title>{title}</Title>
-                <Icon name={icons[type]} />
+                <Icon name={icons[type]} type={type} />
             </Header>
 
             <Consumption>
