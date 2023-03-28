@@ -38,22 +38,22 @@ export function HighlightCard({
     return(
         <Container type={type}>
             <Header>
-                <Title>{title}</Title>
+                <Title type={type}>{title}</Title>
                 <Icon name={icons[type]} type={type} />
             </Header>
 
             <Consumption>
-                <ConsumptionLabel>Consumo Médio:</ConsumptionLabel>
-                <ConsumptionValue>{consumption}</ConsumptionValue>
+                <ConsumptionLabel type={type}>Consumo Médio:</ConsumptionLabel>
+                <ConsumptionValue type={type}>{consumption}</ConsumptionValue>
             </Consumption>
 
             <Cost>
-                <CostLabel>Custo por km:</CostLabel>
-                <CostValue>{cost}</CostValue>
+                <CostLabel type={type}>Custo por km:</CostLabel>
+                <CostValue type={type}>{cost}</CostValue>
             </Cost>
 
             <Footer>
-                <LastTransaction>{lastTransaction}</LastTransaction>
+                <LastTransaction type={type}>{lastTransaction}</LastTransaction>
             </Footer>
         </Container>
     )

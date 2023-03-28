@@ -1,5 +1,6 @@
 
 import { HighlightCard } from '../../Components/HighlightCard';
+import { TransactionCard } from '../../Components/TransactionCard';
 import { 
   Container,
   Header,
@@ -82,6 +83,7 @@ export function Home() {
 
       <Transactions>
         <Title> Abastecimentos</Title>
+        <TransactionCard/>
       </Transactions>
 
     </Container>
