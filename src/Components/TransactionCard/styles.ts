@@ -2,6 +2,10 @@ import { RFValue } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
 
 
+interface TypeProps {
+    type: 'alcohol' | 'gasoline' ;
+}
+
 export const Container = styled.View`
     background-color: ${({ theme }) => theme.colors.header_text};
 
@@ -27,8 +31,8 @@ export const ValueLabel = styled.Text`
     font-size: ${RFValue(14)}px;
     margin-right: 15px;
 `;
-export const Value = styled.Text`
-    color: ${({ theme }) => theme.colors.primary_light};
+export const Value = styled.Text<TypeProps>`
+    color: ${({ theme, type }) => type === 'alcohol' ? theme.colors.primary_light : theme.colors.secondary};
     font-family: ${({ theme }) => theme.fonts.regular};
     font-size: ${RFValue(16)}px;
 `;

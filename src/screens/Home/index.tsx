@@ -16,12 +16,14 @@ import {
   LogountIcon,
   HighlightCards,
   Title,
-  Transactions
+  Transactions,
+  TransactionsList
   
 } from './styles';
+import React from 'react';
 
 
-interface DataListProps extends TransactionCardProps {
+export interface DataListProps extends TransactionCardProps {
   id: string;
 }
 
@@ -120,16 +122,12 @@ export function Home() {
       <Transactions>
         <Title> Abastecimentos</Title>
 
-        <FlatList
+        <TransactionsList
           data={transactionData}
           keyExtractor= {( item ) => item.id}
           renderItem={({ item }) => <TransactionCard data={item} />}
         />
-
-        
-      
       </Transactions>
-
     </Container>
   );
 }

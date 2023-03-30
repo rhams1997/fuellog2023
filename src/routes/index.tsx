@@ -1,10 +1,8 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Splash from '../screens/Splash'
 import Login from '../screens/Login'
-import Home from '../screens/Home'
-import { Loading } from './src/Components/Loading';
-import { ThemeProvider } from 'styled-components';
-import theme from './src/global/styles/theme';
+
+import { Home } from '../screens/Home'
 
 const Stack = createNativeStackNavigator();
 

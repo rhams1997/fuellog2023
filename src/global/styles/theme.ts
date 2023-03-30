@@ -8,7 +8,7 @@ export default {
         text: '#000000',
         text_light: '#969CB2',
         highlight: '#FF872C',
-        card_background: '#363F5F'
+        card_title: '#363F5F'
         
     },
     fonts: {
