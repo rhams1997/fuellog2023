@@ -1,6 +1,7 @@
 
+import { FlatList } from 'react-native/Libraries/Lists/FlatList';
 import { HighlightCard } from '../../Components/HighlightCard';
-import { TransactionCard } from '../../Components/TransactionCard';
+import { TransactionCard, TransactionCardProps } from '../../Components/TransactionCard';
 import { 
   Container,
   Header,
@@ -19,7 +20,25 @@ import {
   
 } from './styles';
 
+
+interface DataListProps extends TransactionCardProps {
+  id: string;
+}
+
 export function Home() {
+  const transactionData: DataListProps[] = [
+    {
+      id: '1',
+      type: 'alcohol' | 'gasoline';
+      value: string;
+      price: string;
+      amount: string;
+      km: string;
+      date: string;
+    }
+
+
+  ];
   return (
     <Container>
         
@@ -83,7 +102,15 @@ export function Home() {
 
       <Transactions>
         <Title> Abastecimentos</Title>
-        <TransactionCard/>
+
+        <FlatList
+          data={transactionData}
+          keyExtractor= {( item ) => item.id}
+          renderItem={({ item }) => <TransactionCard data={item} />}
+        />
+
+        
+      
       </Transactions>
 
     </Container>

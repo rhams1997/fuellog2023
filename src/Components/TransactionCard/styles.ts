@@ -6,7 +6,7 @@ export const Container = styled.View`
     background-color: ${({ theme }) => theme.colors.header_text};
 
     padding: 10px 22px;
-    margin-top: ${RFValue(18)}px;
+    margin-top: ${RFValue(15)}px;
     border-radius: 5px;
 `;
 
