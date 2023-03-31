@@ -97,7 +97,7 @@ export function Home() {
 
       <HighlightCards>
         <HighlightCard 
-          title='Ácool'
+          title='Álcool'
           consumption='8,25 km/l'
           cost='R$ 0,50 / km'
           lastTransaction='Data: 29 de março'
@@ -120,7 +120,7 @@ export function Home() {
       </HighlightCards>
 
       <Transactions>
-        <Title> Abastecimentos</Title>
+        
 
         <TransactionsList
           data={transactionData}

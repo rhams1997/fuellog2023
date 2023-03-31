@@ -21,26 +21,26 @@ export const Container = styled.View<TypeProps>`
 export const  Header = styled.View`
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 1px;
 `; 
 
 export const  Title = styled.Text<TypeProps>`
     color: ${({ theme, type }) => 
-    type === 'total' ? theme.colors.header_text :  theme.colors.card_title};
+    type === 'gasoline' ? theme.colors.gasoline_color :  theme.colors.alcohol_color};
     font-family: ${({ theme }) => theme.fonts.regular};
     font-size: ${RFValue(15)}px;
 `;  
 
 export const  Icon = styled(MaterialIcons)<TypeProps>`
-    font-size: ${RFValue(35)}px;
+    font-size: ${RFValue(40)}px;
     ${(props) => props.type === 'alcohol' && css`
-        color: ${({ theme }) => theme.colors.primary_light};
+        color: ${({ theme }) => theme.colors.alcohol_color};
     `}
     ${(props) => props.type === 'gasoline' && css`
-        color: ${({ theme }) => theme.colors.secondary};
+        color: ${({ theme }) => theme.colors.gasoline_color};
     `}
     ${(props) => props.type === 'total' && css`
-        color: ${({ theme }) => theme.colors.header_text};
+        color: ${({ theme }) => theme.colors.text_light};
     `}
 
 `;

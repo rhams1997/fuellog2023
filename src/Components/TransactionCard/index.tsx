@@ -11,7 +11,7 @@ import {
      Footer,
      KmContainer,
      Date, 
-     CarIcon
+     CarIcon,
 } from "./styles";
 
 export interface TransactionCardProps {
@@ -38,12 +38,12 @@ export function TransactionCard({ data }: Props){
                     <ValueLabel> Valor: </ValueLabel>
                     <Value type={data.type}>{data.value}</Value> 
                 </ValueContainer>
-                <Type>
+                
+                <Type type={data.type}>
                     {data.type === 'alcohol' ? 'Álcool' : 'Gasolina'}
                 </Type>
                 
             </Header>
-            
 
             <AmountContainer>
                 <ValueLabel>Preço do litro:</ValueLabel>

@@ -7,6 +7,7 @@ export default {
         header_text:'#000000',
         card_color: '#17DAC3',
         alcohol_color: '#00FF57',
+        gasoline_color:'#C40303',
         text: '#000000',
         text_light: '#969CB2',
         highlight: '#FF872C',

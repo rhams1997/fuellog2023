@@ -32,15 +32,17 @@ export const ValueLabel = styled.Text`
     margin-right: 15px;
 `;
 export const Value = styled.Text<TypeProps>`
-    color: ${({ theme, type }) => type === 'alcohol' ? theme.colors.primary_light : theme.colors.secondary};
+    color: ${({ theme, type }) => type === 'alcohol' ? theme.colors.alcohol_color : theme.colors.gasoline_color};
     font-family: ${({ theme }) => theme.fonts.regular};
     font-size: ${RFValue(16)}px;
 `;
-export const Type = styled.Text`
-    color: ${({ theme }) => theme.colors.alcohol_color};
+
+export const  Type = styled.Text<TypeProps>`
+    color: ${({ theme, type }) => 
+    type === 'gasoline' ? theme.colors.gasoline_color :  theme.colors.alcohol_color};
     font-family: ${({ theme }) => theme.fonts.regular};
-    font-size: ${RFValue(14)}px;
-`;
+    font-size: ${RFValue(15)}px;
+`;  
 
 export const AmountContainer = styled.View`
     flex-direction: row;
