@@ -34,7 +34,7 @@ export const Container = styled.View`
   `;
 
   export const CarIcon = styled(Ionicons)`
-    color: ${({ theme }) => theme.colors.header_text};
+    color: ${({ theme }) => theme.colors.text};
     font-size: ${RFValue(40)}px;
   `;
 
@@ -56,7 +56,7 @@ export const Container = styled.View`
   `;
 
   export const CarPlate = styled.Text`
-    color: ${({ theme }) => theme.colors.header_text};
+    color: ${({ theme }) => theme.colors.text};
     font-family: ${({ theme }) => theme.fonts.regular};
     font-size: ${RFValue(12)}px;
     line-height: ${RFValue(24)}px;

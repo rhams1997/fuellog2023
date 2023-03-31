@@ -10,7 +10,8 @@ import {
      Amount,
      Footer,
      KmContainer,
-     Date 
+     Date, 
+     CarIcon
 } from "./styles";
 
 export interface TransactionCardProps {
@@ -29,16 +30,20 @@ interface Props {
 export function TransactionCard({ data }: Props){
     return(
         <Container>
-
+            
             <Header>
                 <ValueContainer>
+                    <CarIcon name='ios-car-sport'>
+                    </CarIcon>
                     <ValueLabel> Valor: </ValueLabel>
-                    <Value type={data.type}>{data.value}</Value>
+                    <Value type={data.type}>{data.value}</Value> 
                 </ValueContainer>
                 <Type>
                     {data.type === 'alcohol' ? 'Álcool' : 'Gasolina'}
-                </Type> 
+                </Type>
+                
             </Header>
+            
 
             <AmountContainer>
                 <ValueLabel>Preço do litro:</ValueLabel>
@@ -56,8 +61,7 @@ export function TransactionCard({ data }: Props){
                     <Amount>{data.km}</Amount>
                 </KmContainer>
                 <Date>{data.date}</Date> 
-            </Footer>
-            
+            </Footer> 
         </Container>
     )
 }

@@ -96,18 +96,18 @@ export function Home() {
       </Header>
 
       <HighlightCards>
-        <HighlightCard
+        <HighlightCard 
           title='Ácool'
-          consumption='7,00 km/l'
-          cost='R$ 0,34 / km'
-          lastTransaction='Última entrada dia 13 de abril'
+          consumption='8,25 km/l'
+          cost='R$ 0,50 / km'
+          lastTransaction='Data: 29 de março'
           type='alcohol'
         />
       <HighlightCard
           title='Gasolina'
           consumption='8,63 km/l'
           cost='R$ 0,28 / km'
-          lastTransaction='Última entrada dia 3 de abril'
+          lastTransaction='Data: 28 de março'
           type='gasoline'
         />
       <HighlightCard
