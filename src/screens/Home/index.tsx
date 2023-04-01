@@ -32,29 +32,29 @@ export function Home() {
     {
       id: '1',
       type: 'alcohol',
-      value: 'R$ 151,24',
+      value: 'R$ 5,70',
       price: 'R$ 3,98',
-      amount: '38',
-      km: '340',
-      date: '13/04/2022'
+      amount: '10',
+      km: '130',
+      date: '22/07/2022'
     },
     {
       id: '2',
       type: 'gasoline',
-      value: 'R$ 4,49',
-      price: 'R$ 89,49',
-      amount: '20',
-      km: '200',
-      date: '03/04/2022'
+      value: 'R$ 5,70',
+      price: 'R$ 3,58',
+      amount: '10',
+      km: '130',
+      date: '22/07/2022'
     },
     {
       id: '3',
       type: 'gasoline',
-      value: 'R$ 89,49',
-      price: 'R$ 4,49',
-      amount: '20',
-      km: '200',
-      date: '01/04/2022'
+      value: 'R$ 5,70',
+      price: 'R$ 3,98',
+      amount: '10',
+      km: '130',
+      date: '22/07/2022'
     },
   ];
   

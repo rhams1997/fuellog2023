@@ -3,7 +3,7 @@ export default {
         primary: '#17DAC3',
         primary_light: '#12A454',
         secondary: 'C8191E',
-        background: '#000000',
+        background: '#28C3B0',
         header_text:'#000000',
         card_color: '#17DAC3',
         alcohol_color: '#00FF57',

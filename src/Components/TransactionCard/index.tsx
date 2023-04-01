@@ -51,7 +51,7 @@ export function TransactionCard({ data }: Props){
             </AmountContainer>
 
             <AmountContainer>
-                <ValueLabel>Preço do litro:</ValueLabel>
+                <ValueLabel>Quanti de litros:</ValueLabel>
                 <Amount>{data.amount}</Amount>
             </AmountContainer>
 
